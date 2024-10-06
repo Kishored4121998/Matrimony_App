@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.daily-suggestions-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.daily-suggestions-link i {
+  margin-right: 8px;
+}
+
+.daily-suggestions-link span {
+  margin-right: 8px;
+}
+
+.daily-suggestions-link:hover {
+  background-color: #0056b3;
+}
+
+.profile-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h3 {
+  margin: 12px 0;
+  font-size: 1.6em;
+  color: #333;
+}
+
+p {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.action-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-buttons button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.shortlisted-text {
+  color: green;
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 1.1em;
+}

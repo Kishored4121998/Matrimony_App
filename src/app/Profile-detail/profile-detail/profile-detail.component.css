@@ -1,0 +1,72 @@
+.profile-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.arrow-back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 36px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); 
+  border-radius: 70%; 
+  padding: 10px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  text-align: center;
+}
+
+mat-card-title {
+  font-size: 1.5em;
+  color: #333;
+}
+
+mat-card-content {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 90%;
+  }
+
+  mat-card-title {
+    font-size: 1.2em;
+  }
+
+  mat-card-content {
+    font-size: 0.9em;
+  }
+}

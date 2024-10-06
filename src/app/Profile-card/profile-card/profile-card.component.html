@@ -1,0 +1,36 @@
+<div class="header">
+  <a routerLink="/daily-suggestions" class="daily-suggestions-link">
+    <i class="fas fa-lightbulb"></i>
+    <span>Daily Suggestions</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+
+<div class="profile-card">
+  <div *ngIf="!showError; else errorTemplate">
+    <img [src]="profile.imageUrl" alt="{{ profile.name }}" (click)="viewProfile(profile)" class="profile-image" />
+    <h3>{{ profile.name }}</h3>
+    <p>Age: {{ profile.age }}</p>
+    <p>Height: {{ profile.height }}</p>
+    <p>Profession: {{ profile.profession }}</p>
+    <p>Location: {{ profile.location }}</p>
+
+    <div *ngIf="isShortlisted" class="shortlisted-text">Shortlisted</div>
+
+    <div class="action-buttons">
+      <button mat-icon-button color="primary" (click)="accept(profile)" class="action-button">
+        <mat-icon>check</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" (click)="decline()" class="action-button">
+        <mat-icon>clear</mat-icon>
+      </button>
+      <button mat-button (click)="shortlist()" class="action-button">
+        <mat-icon>star</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <ng-template #errorTemplate>
+    <p>No profile data available.</p>
+  </ng-template>
+</div>

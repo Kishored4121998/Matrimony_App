@@ -1,0 +1,23 @@
+
+
+
+<div class="page-background">
+  <h2 *ngIf="!hideText" style="color: azure; text-align: center;">My Matches</h2>
+
+  <div *ngIf="!hideText"> <!-- Only show if hideText is false -->
+    <h2 style="color: azure; text-align: center;">
+      6 Profiles pending with me 
+      <span style="border: 1px solid azure; color: azure; border-radius: 15px; text-align: center; font-size: 15px; padding: 3px;">
+        5 new
+      </span>
+    </h2>
+  </div>
+  
+  <router-outlet></router-outlet>
+</div>
+
+  
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="profile-detail-container">
+  <mat-card class="profile-card">
+    <div class="image-container">
+      <mat-icon (click)="goBack()" class="arrow-back">arrow_back</mat-icon>
+      <img [src]="profile?.imageUrl" alt="{{ profile?.name }}" class="profile-image" />
+    </div>
+
+    <mat-card-header>
+      <mat-card-title>{{ profile?.name }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>Age: {{ profile?.age }}</p>
+      <p>Height: {{ profile?.height }}</p>
+      <p>Profession: {{ profile?.profession }}</p>
+      <p>Location: {{ profile?.location }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

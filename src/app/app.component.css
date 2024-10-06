@@ -1,0 +1,7 @@
+.page-background {
+    background-color: rgb(30, 185, 246);
+    min-height: 100vh; /* Make sure it takes the full height of the page */
+    padding: 20px; /* Add some padding if needed */
+  }
+  
+  
