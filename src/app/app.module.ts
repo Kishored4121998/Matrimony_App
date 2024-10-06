@@ -6,8 +6,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HammerModule } from '@angular/platform-browser';
-
-
 import { AppComponent } from './app.component';
 import {  ProfileListComponent  } from './Profile-list/profile-list/profile-list.component';
 import { ProfileCardComponent } from './Profile-card/profile-card/profile-card.component'

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter, HostListener } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter, HostListener, OnChanges, SimpleChanges } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { ProfileService } from '../../services/profile.service';
@@ -8,7 +8,8 @@ import { ProfileService } from '../../services/profile.service';
   templateUrl: './profile-card.component.html',
   styleUrls: ['./profile-card.component.css']
 })
-export class ProfileCardComponent implements OnInit {
+export class ProfileCardComponent implements OnInit , OnChanges {
+
   @Input() profile: any;
   @Output() actionTaken = new EventEmitter<{ action: string, profile: any }>();
   showError: boolean = false;
@@ -17,12 +18,19 @@ export class ProfileCardComponent implements OnInit {
   endX: number = 0;
 
   constructor(private snackBar: MatSnackBar, private router: Router, private profileService: ProfileService) {}
-
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.profile,"onchange");
+    
+  }
   ngOnInit(): void {
+   
+    console.log(this.profile , "data");
+    
     if (!this.profile) {
       this.showError = true;
       console.error("No profiles found.");
     }
+
   }
 
   @HostListener('touchstart', ['$event'])

@@ -15,6 +15,8 @@ export class ProfileListComponent implements OnInit {
   ngOnInit() {
     this.http.get<any[]>('assets/profiles.json').subscribe(data => {
       this.profiles = data;
+      console.log(this.profiles,"Hello");
+      
       this.currentIndex = 0;
     }, error => {
       console.error("Error loading profiles:", error);
