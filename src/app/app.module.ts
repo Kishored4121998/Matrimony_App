@@ -17,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { CommonModule } from '@angular/common';
 import { ProfileDetailComponent } from './Profile-detail/profile-detail/profile-detail.component';
-import { SuggestionCardComponent } from './suggestion-card/suggestion-card.component';
+
 import { DailySuggestionsComponent } from './daily-suggestions/daily-suggestions.component';
 
 
@@ -28,7 +28,6 @@ import { DailySuggestionsComponent } from './daily-suggestions/daily-suggestions
         ProfileCardComponent,
         ProfileListComponent,
         ProfileDetailComponent,
-        SuggestionCardComponent,
         DailySuggestionsComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,

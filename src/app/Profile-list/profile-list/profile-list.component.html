@@ -1,7 +1,7 @@
 <div class="carousel">
   <div class="carousel-inner" [ngStyle]="{ 'transform': 'translateX(-' + (currentIndex * 100) + '%)' }">
     <ng-container *ngFor="let profile of profiles">
-      <app-profile-card 
+      <app-profile-card >
         [profile]="profile" 
         (actionTaken)="onProfileAction($event)">
       </app-profile-card>
