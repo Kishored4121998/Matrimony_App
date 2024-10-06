@@ -6,7 +6,7 @@
       "height": "5 ft 8 in",
       "profession": "Doctor",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/img3.jpeg"
+      "imageUrl": "assets/Images/Neetu.jpg"
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
       "height": "5 ft 3 in",
       "profession": "Actress",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl":"assets/Images/img1.jpg" 
+      "imageUrl":"assets/Images/Jp.jpg" 
     },
     {
       "id": 4,

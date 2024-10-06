@@ -1,35 +1,37 @@
 <div class="suggestions-container">
-  <div *ngFor="let suggestion of suggestions; let i = index" 
-       class="stacked-card" 
-       [ngClass]="{'active': i === currentIndex}">
-    
-    <div class="image-container">
-      <img [src]="suggestion.imageUrl" alt="{{ suggestion.name }}" class="profile-img" /> 
-      <div class="overlay-text">
-        <i class="arrow-icon fa fa-arrow-circle-left" (click)="goBack()"></i>
-        <span class="daily-suggestions-text">Daily Suggestions</span>
+  <div class="card-wrapper">
+    <div *ngFor="let suggestion of suggestions; let i = index" 
+         class="stacked-card" 
+         [ngClass]="{'active': i === currentIndex}">
+      
+      <div class="image-container">
+        <img [src]="suggestion.imageUrl" alt="{{ suggestion.name }}" class="profile-img" /> 
+        <div class="overlay-text">
+          <i class="arrow-icon fa fa-arrow-circle-left" (click)="goBack()"></i>
+          <span class="daily-suggestions-text">Daily Suggestions</span>
+        </div>
       </div>
-    </div>
 
-    <div class="verified-container">
-      <i class="fa fa-check-circle verified-icon"></i>
-      <span class="premium-text">Verified</span>
-      <i class="fa fa-crown crown-icon"></i>
-      <span class="premium-text premium-nri-text">Premium NRI</span>
-    </div>
+      <div class="verified-container">
+        <i class="fa fa-check-circle verified-icon"></i>
+        <span class="premium-text">Verified</span>
+        <i class="fa fa-crown crown-icon"></i>
+        <span class="premium-text premium-nri-text">Premium NRI</span>
+      </div>
 
-    <h3>{{ suggestion.name }}</h3>
-    <p>Age: {{ suggestion.age }}</p>
-    <p>Profession: {{ suggestion.profession }}</p>
-    <p>Location: {{ suggestion.location }}</p>
+      <h3>{{ suggestion.name }}</h3>
+      <p>Age: {{ suggestion.age }}</p>
+      <p>Profession: {{ suggestion.profession }}</p>
+      <p>Location: {{ suggestion.location }}</p>
 
-    <div class="actions">
-      <button (click)="onInterested()">
-        <i class="fa fa-check"></i>
-      </button>
-      <button (click)="onNotInterested()">
-        <i class="fa fa-times"></i>
-      </button>
+      <div class="actions">
+        <button (click)="onInterested()">
+          <i class="fa fa-check"></i>
+        </button>
+        <button (click)="onNotInterested()">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
     </div>
   </div>
 </div>

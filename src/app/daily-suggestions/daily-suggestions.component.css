@@ -105,3 +105,34 @@
 .actions button:hover {
   color: green;
 }
+
+/* Add swipe animations */
+.swipe-right {
+  animation: swipeRight 0.3s forwards;
+}
+
+.swipe-left {
+  animation: swipeLeft 0.3s forwards;
+}
+
+@keyframes swipeRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes swipeLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

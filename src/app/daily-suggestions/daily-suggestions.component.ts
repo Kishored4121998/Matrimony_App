@@ -61,17 +61,20 @@ export class DailySuggestionsComponent implements OnInit {
 
   moveToNextSuggestion(direction: string): void {
     const cardElement = document.querySelectorAll('.stacked-card')[this.currentIndex];
+
     if (cardElement) {
       cardElement.classList.add(direction === 'right' ? 'swipe-right' : 'swipe-left');
     }
 
     setTimeout(() => {
+      // Move to the next suggestion or show a message if no more suggestions
       if (this.currentIndex < this.suggestions.length - 1) {
         this.currentIndex++;
       } else {
         this.openSnackBar('No more suggestions.');
       }
-      
+
+      // Remove the swipe classes to reset the card for the next action
       if (cardElement) {
         cardElement.classList.remove('swipe-right', 'swipe-left');
       }
