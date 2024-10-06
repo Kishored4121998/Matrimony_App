@@ -6,7 +6,7 @@
       "height": "5 ft 8 in",
       "profession": "Doctor",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/Priyanka.jpeg"
+      "imageUrl": "assets/Images/img3.jpeg"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "height": "5 ft 1 in",
       "profession": "Software Engineer",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/Shalini.jpg"
+      "imageUrl": "assets/Images/img2.jpg"
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "height": "5 ft 3 in",
       "profession": "Actress",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/Uma.jpg"
+      "imageUrl":"assets/Images/img1.jpg" 
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "height": "5 ft 7 in",
       "profession": "Singer",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/Uma.jpg"
+      "imageUrl": "assets/Images/img4.jpeg"
     },
     {
       "id": 5,
@@ -42,7 +42,7 @@
       "height": "5 ft 1 in",
       "profession": "Swimmer",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/Priyanka.jpeg"
+      "imageUrl": "assets/Images/img5.jpeg"
     },
     {
       "id": 6,
@@ -51,7 +51,7 @@
       "height": "5 ft 2 in",
       "profession": "Developer",
       "location": "Chennai, Tamil Nadu",
-      "imageUrl": "assets/Images/Neetu.jpg"
+      "imageUrl": "assets/Images/img6.jpg"
     }
   ]
   
