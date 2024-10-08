@@ -1,0 +1,64 @@
+{
+  "defaults": {
+    "project": 2,
+    "env": 1
+  },
+  "actives": {
+    "project": 2,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "6836000000111001",
+      "name": "Matrimonyapp",
+      "domain": {
+        "id": "50022615256",
+        "name": "matrimonyapp-60029429021.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60029429021",
+          "name": "Development",
+          "type": 3,
+          "env_status": "Active",
+          "project_details": {
+            "project_name": "Matrimonyapp",
+            "id": "6836000000111001",
+            "project_type": "Live"
+          },
+          "is_default": true,
+          "action_required": false
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "id": "6836000000111045",
+      "name": "MatrimonyApp1",
+      "domain": {
+        "id": "50022615507",
+        "name": "matrimonyapp1-60029429021.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60029429021",
+          "name": "Development",
+          "type": 3,
+          "env_status": "Active",
+          "project_details": {
+            "project_name": "MatrimonyApp1",
+            "id": "6836000000111045",
+            "project_type": "Live"
+          },
+          "is_default": true,
+          "action_required": false
+        }
+      ]
+    }
+  ]
+}

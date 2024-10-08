@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Priyanka",
+    "age": 27,
+    "height": "5 ft 8 in",
+    "profession": "Doctor",
+    "location": "Chennai, Tamil Nadu",
+    "imageUrl": "assets/Images/Priyanka.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Shalini",
+    "age": 25,
+    "height": "5 ft 1 in",
+    "profession": "Software Engineer",
+    "location": "Chennai, Tamil Nadu",
+    "imageUrl": "assets/Images/Shalini.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Uma",
+    "age": 28,
+    "height": "5 ft 3 in",
+    "profession": "Actress",
+    "location": "Chennai, Tamil Nadu",
+    "imageUrl": "assets/Images/Uma.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Akila",
+    "age": 24,
+    "height": "5 ft 7 in",
+    "profession": "Singer",
+    "location": "Chennai, Tamil Nadu",
+    "imageUrl": "assets/Images/img1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Jeya Priya",
+    "age": 23,
+    "height": "5 ft 1 in",
+    "profession": "Swimmer",
+    "location": "Chennai, Tamil Nadu",
+    "imageUrl": "assets/Images/Jp.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Neetu",
+    "age": 26,
+    "height": "5 ft 2 in",
+    "profession": "Developer",
+    "location": "Chennai, Tamil Nadu",
+    "imageUrl": "assets/Images/Neetu.jpg"
+  }
+]
